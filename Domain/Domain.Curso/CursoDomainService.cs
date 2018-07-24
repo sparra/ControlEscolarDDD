@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Domain.Academicos;
-using Domain.Kardex;
 
 namespace Domain.Curso
 {
@@ -13,10 +11,10 @@ namespace Domain.Curso
         {
             //Inicializar y validar propiedades y campos.
         }
-        public void EvaluaCurso(Curso curso, Profesor profesor, Estudiante.Estudiante estudiante,  decimal calificacion)
-        {
-            //TODO : Evaluar el Curso a través del Kardex
-            var kardex = new Kardex.Kardex();
-        }
+        //public void EvaluaCurso(Curso curso, Profesor profesor, Estudiante.Estudiante estudiante,  decimal calificacion)
+        //{
+        //    //TODO : Evaluar el Curso a través del Kardex
+        //    //var kardex = new Kardex.Kardex();
+        //}
     }
 }
