@@ -13,5 +13,8 @@ namespace Domain.Kardex
             this.ListaCursos = listaCursos;
         }
 
+        public HistoriaAcademica()
+        {
+        }
     }
 }

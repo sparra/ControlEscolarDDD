@@ -5,18 +5,24 @@ using System.Text;
 
 namespace Domain.Kardex
 {
-    public class HistoriaAcademicaDomainService
+    public class HistoriaAcademicaDomainService : TemporalDomainService
     {
-        private readonly HistoriaAcademica _historiaAcademica;
-        public HistoriaAcademicaDomainService(HistoriaAcademica historiaAcademica)
+        private HistoriaAcademica _historiaAcademica;
+        public HistoriaAcademicaDomainService()
+        {
+            
+        }
+
+        public void LoadHistoriaAcademica(HistoriaAcademica historiaAcademica)
         {
             this._historiaAcademica = historiaAcademica;
         }
-        
-        public string GetNombreEstudiante()
+
+        public override string GetNombreEstudiante()
         {
             //return _kardex.Alumno.Nombre;
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return "Pedro";
         }
 
         public decimal GetPromedio()
